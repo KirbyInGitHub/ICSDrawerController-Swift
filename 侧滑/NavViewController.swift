@@ -9,7 +9,9 @@
 import UIKit
 
 class NavViewController: UINavigationController,SCSDrawerControllerChild,SCSDrawerControllerPresenting {
+    
     var drawer:SCSDrawerViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

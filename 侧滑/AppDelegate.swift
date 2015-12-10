@@ -12,6 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var drawerVc:SCSDrawerViewController!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -24,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let nav = NavViewController(rootViewController:planVc)
         
-        let drawerVc = SCSDrawerViewController(leftViewController: colorVc, centerViewController: nav)
+        drawerVc = SCSDrawerViewController(leftViewController: colorVc, centerViewController: nav)
         
         window!.rootViewController = drawerVc
         

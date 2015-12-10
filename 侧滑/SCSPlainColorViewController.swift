@@ -10,8 +10,6 @@ import UIKit
 
 class SCSPlainColorViewController: UIViewController {
     
-    
-    
     private var openDrawerButton:UIButton!
 
     override func viewDidLoad() {
@@ -36,6 +34,10 @@ class SCSPlainColorViewController: UIViewController {
     }
     
     @objc private func openDrawer() {
+        
+        let appdelegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        
+        appdelegate!.drawerVc.close()
 
     }
     
