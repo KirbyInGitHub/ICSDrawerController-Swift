@@ -32,4 +32,13 @@ func replaceCenterViewControllerWithViewControllerNoanimate(viewController:proto
 ```
 
 因为原作者的侧滑手势用的是pan手势,这样在主控制进行push动作的时候,会影响push控制器的edgePan手势,所以我在此基础上进行了修改
-侧滑打开替换成UISrceenEdgePan手势,关闭还是使用Pan手势
+侧滑打开替换成UISrceenEdgePan手势,关闭还是使用Pan手势<br>
+
+如果需要OC版的代码,请访问原作者的GitHub地址:<br>
+https://github.com/icecreamstudios/ICSDrawerController <br>
+
+原作者的Demo效果:<br>
+![](https://camo.githubusercontent.com/4053c60ccec5ea5d800cca809f5d73d1f815fdfe/687474703a2f2f696365637265616d73747564696f732e636f6d2f6f70656e736f757263652f636f6c6f72732d64656d6f2e676966)
+
+
+
