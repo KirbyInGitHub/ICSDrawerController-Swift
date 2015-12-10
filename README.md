@@ -7,11 +7,11 @@
 具体用法可以在Appdelegate里面将控制器作为成员变量<br>
 * var drawerVc:SCSDrawerViewController! <br>
 ```Swift
-* let colorVc = SCSColorsViewController() <br>
-* let planVc = SCSPlainColorViewController() <br>
-* let nav = NavViewController(rootViewController:planVc) <br>
-* drawerVc = SCSDrawerViewController(leftViewController: colorVc, centerViewController: nav) <br>
-* window!.rootViewController = drawerVc <br>
+let colorVc = SCSColorsViewController() 
+let planVc = SCSPlainColorViewController() 
+let nav = NavViewController(rootViewController:planVc) 
+drawerVc = SCSDrawerViewController(leftViewController: colorVc, centerViewController: nav) 
+window!.rootViewController = drawerVc 
 ```
 在需要关闭的类里面定义关闭按钮,按钮的点击事件里面调用关闭方法:<br>
 ```Swift
